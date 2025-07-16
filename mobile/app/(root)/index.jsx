@@ -7,8 +7,8 @@ import {useEffect} from 'react'
 
 export default function Page() {
   const { user } = useUser()
-  const {transactions,summary,isLoading,loadData,deleteTransactions}=useTransactions(user.id)
-
+  const {transactions,summary,loadData,}=useTransactions(user.id)
+  // deleteTransactionsisLoading
   useEffect(()=>{
     loadData()
   },[loadData])
@@ -19,6 +19,10 @@ export default function Page() {
     <View>
       <SignedIn>
         <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
+        <Text>{summary.income}</Text>
+        <Text>{summary.balance}</Text>
+        <Text>{summary.expenses}</Text>
+
         <SignOutButton />
       </SignedIn>
       <SignedOut>

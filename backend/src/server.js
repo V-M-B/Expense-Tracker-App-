@@ -9,6 +9,8 @@ import transactionRoute from "./routes/transactionsRoute.js"
 
 const app = express();
 
+if(process.env.NODE_ENV === "production") JsonObjKeysCommand.start();
+
 // middleware to parse json body>>>>
 app.use(express.json());
 
@@ -37,6 +39,11 @@ async function initDB() {
 
 
 const PORT = process.env.PORT || 3000;
+
+app.get("/api/health",(req,res)=>{
+    res.status(200).json({status:"ok"})
+})
+
 
 initDB().then(() => {
     app.listen(PORT, () => {
