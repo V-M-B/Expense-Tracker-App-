@@ -116,6 +116,7 @@ Expense-Tracker-App-/
 
 ---
 
-## License
+## App
 
-This project is licensed under the MIT License. 
+https://expo.dev/accounts/vmb/projects/mobile/builds/e0e2ab82-3707-4103-8784-45b299366da9
+
