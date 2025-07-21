@@ -13,30 +13,44 @@
     },
     "android": {
       "adaptiveIcon": {
-   
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vmb.mobile",
+      "splash": {
+        "image": "./assets/splashscreen_logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "bundler": "metro",
       "output": "static"
-
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ]
     ],
+    "splash": {
+      "image": "./assets/splashscreen_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d514aeb0-9935-416b-962f-db780b30397a"
+      }
     }
   }
 }

@@ -6,7 +6,9 @@ import { tokenCache } from '@clerk/clerk-expo/token-cache'
 
 export default function RootLayout() {
   return ( 
-    <ClerkProvider tokenCache={tokenCache}>
+    <ClerkProvider
+    publishableKey={process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    tokenCache={tokenCache}>
     <SafeScreen>
     <Slot screenOptions={{headerShown:false}}/>
   </SafeScreen>
