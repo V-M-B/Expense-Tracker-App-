@@ -9,7 +9,6 @@ A cross-platform expense tracking application with a Node.js backend and a React
 - User authentication (sign up, sign in, sign out)
 - Add, view, and delete transactions
 - Categorize expenses
-- Visualize spending with charts (planned/coming soon)
 - Rate limiting and security middleware
 - Responsive mobile UI
 
